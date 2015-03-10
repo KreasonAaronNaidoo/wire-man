@@ -103,7 +103,7 @@ void idle(){
 void update(){
     
     time = glutGet(GLUT_ELAPSED_TIME);
-    angle = time/10;
+    angle = time/30;
 }
 
 void display(){
