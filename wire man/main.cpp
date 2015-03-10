@@ -44,52 +44,52 @@ static void render(void)
     glColor3ub(0, 0, 255);
     
     glPushMatrix(); // head
-    glScalef(0.7,1,0.7);
-    glTranslatef(0.0f, 0.53f, 0.0f);
-    glRotatef(90,1,0,0);
-    glutWireSphere(0.2,lon,lat);
+        glScalef(0.7,1,0.7);
+        glTranslatef(0.0f, 0.53f, 0.0f);
+        glRotatef(90,1,0,0);
+        glutWireSphere(0.2,lon,lat);
     glPopMatrix();
     
     glPushMatrix(); // neck
-    glScalef(0.5,1, 0.5);
-    glTranslatef(0.0f, 0.32f, 0.0f);
-    glutWireSphere(0.03, lon, lat);
+        glScalef(0.5,1, 0.5);
+        glTranslatef(0.0f, 0.32f, 0.0f);
+        glutWireSphere(0.03, lon, lat);
     glPopMatrix();
     
     glPushMatrix(); // body
-    glScalef(0.5,1,0.3);
-    glRotatef(90,1,0,0);
-    glutWireSphere(0.3,lon,lat);
+        glScalef(0.5,1,0.3);
+        glRotatef(90,1,0,0);
+        glutWireSphere(0.3,lon,lat);
     glPopMatrix();
     
     glPushMatrix(); // left leg
-    glTranslatef(-0.06f, -0.5f, 0.0f);
-    glScalef(1,5,1);
-    glRotatef(90,1,0,0);
-    glutWireSphere(0.05f,lon,lat);
+        glTranslatef(-0.06f, -0.5f, 0.0f);
+        glScalef(1,5,1);
+        glRotatef(90,1,0,0);
+        glutWireSphere(0.05f,lon,lat);
     glPopMatrix();
     
     glPushMatrix(); // right leg
-    glTranslatef(0.06f, -0.5f, 0.0f);
-    glScalef(1,5,1);
-    glRotatef(90,1,0,0);
-    glutWireSphere(0.05f,lon,lat);
+        glTranslatef(0.06f, -0.5f, 0.0f);
+        glScalef(1,5,1);
+        glRotatef(90,1,0,0);
+        glutWireSphere(0.05f,lon,lat);
     glPopMatrix();
     
     glPushMatrix(); // left arm
-    glTranslatef(0.22f, 0.14f, 0);
-    glRotatef(45,0,0,1);
-    glScalef(1, 4, 1);
-    glRotatef(90,1,0,0);
-    glutWireSphere(0.05,lon,lat);
+        glTranslatef(0.22f, 0.14f, 0);
+        glRotatef(45,0,0,1);
+        glScalef(1, 4, 1);
+        glRotatef(90,1,0,0);
+        glutWireSphere(0.05,lon,lat);
     glPopMatrix();
     
     glPushMatrix(); // right arm
-    glTranslatef(-0.22f, 0.14f, 0);
-    glRotatef(-45,0,0,1);
-    glScalef(1, 4, 1);
-    glRotatef(90,1,0,0);
-    glutWireSphere(0.05,lon,lat);
+        glTranslatef(-0.22f, 0.14f, 0);
+        glRotatef(-45,0,0,1);
+        glScalef(1, 4, 1);
+        glRotatef(90,1,0,0);
+        glutWireSphere(0.05,lon,lat);
     glPopMatrix();
     
     glutSwapBuffers();
