@@ -39,7 +39,7 @@ static void render(void)
     
     drawGridLines();
     
-    glRotatef(angle,0,5,0);
+    glRotatef(angle,5,5,5);
     
     glColor3ub(0, 0, 255);
     
